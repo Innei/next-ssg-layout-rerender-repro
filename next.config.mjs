@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  output: process.env.NODE_ENV === 'production' ? 'export' : 'standalone',
+}
 
-export default nextConfig;
+export default nextConfig
